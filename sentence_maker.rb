@@ -10,6 +10,8 @@ File.open("words.csv", "r") do |file|
   end
 end
 
+puts sentences
+
 whenn = sentences[rand(sentences.size())][0]
 where = sentences[rand(sentences.size())][1]
 who = sentences[rand(sentences.size())][2]
