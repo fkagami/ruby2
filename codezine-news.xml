@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../../../../css/rss/feedRss2.xsl" media="screen" type="text/xsl"?>
+
+<rss version="2.0"> 
+  <channel> 
+    <title>CodeZine</title>  
+    <link>http://codezine.jp/</link>  
+    <copyright>Copyright 2007-2008 CodeZine, Shoeisha Co., Ltd. All rights reserved.</copyright>  
+    <language>ja-JP</language>  
+    <pubDate>Sat, 25 Apr 2015 16:11:15 +0900</pubDate>  
+    <description>プログラミングに役立つソースコードが満載な開発者のための実装系Webマガジン</description>  
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="http://rss.rssad.jp/rss/codezine/new/20/index.xml" type="application/rss+xml"/>  
+    <item> 
+      <title>IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/5a4336b54d78bbbb505d98b793cd2f82?ul=cmY1bostJITm2XHW_ZVLU9uvmrDEuspm3J33DXWMPANsrGymABukxbAbS4pCEGfMckJ4STF</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8681</guid>  
+      <pubDate>Fri, 24 Apr 2015 19:10:00 +0900</pubDate>  
+      <description><![CDATA[<p>　情報処理推進機構（IPA）は、IT関連産業の人材動向、産学におけるIT教育の状況、IT人材個人の意識、これらを調査し結果をまとめた「IT人材白書2015 新たなステージは見えているか ～ITで“次なる世界”をデザインせよ～」を4月24日に販売開始した。価格は税別で1,389円。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/5a4336b54d78bbbb505d98b793cd2f82"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>データサイエンス向けのPython統合開発環境「Rodeo」をリリース</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/7540d7ea1d37e0cbad3b151cfa755c4c?ul=PGrSEoOi2FF59rDDcpptau25lCakpv8K50jypTdp_jfW6kUK_ioE8zzIZVM_3F_gqdU0wNR</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8680</guid>  
+      <pubDate>Fri, 24 Apr 2015 18:20:00 +0900</pubDate>  
+      <description><![CDATA[<p>　米Yhatは、Pythonによるデータサイエンスのための統合開発環境（IDE）である「Rodeo」を、4月23日（現地時間）にリリースした。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/7540d7ea1d37e0cbad3b151cfa755c4c"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/3915e36824b8f01bcfcad77c14ab574a?ul=Y3l8oWVotqyn5iseL2kD28H9qLwcSd1FRkfAuaRayyVxAvSFnAgfh2RD7hmYYHm3QLmtsbo</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8679</guid>  
+      <pubDate>Fri, 24 Apr 2015 14:05:00 +0900</pubDate>  
+      <description><![CDATA[<p>　The jQuery Foundationは、JavaScriptの国際化（i18n）ライブラリ「Globalize 1.0」を、4月23日（現地時間）にリリースした。同プロジェクトは長い時間をかけて開発を進めてきたが、今回が初の安定リリースとなる。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/3915e36824b8f01bcfcad77c14ab574a"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/cf777be7a9cdc51d2f863e8e6e1ff8e2?ul=uLoGlrwq0nj52x40wzPa6xqfJZNK1k2Yb.CjmM4CNpv8_BhYJxaohrJgj4a.mEj2qaniS4H</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8678</guid>  
+      <pubDate>Fri, 24 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　米GitHubは、4月23日（現地時間）にJavaScriptによってデスクトップアプリケーションを作成できる、クロスプラットフォームのデスクトップアプリケーションシェルAtom Shellの名称を、Electronに変更した。今回の改称に合わせて、公式サイトのURLも変更する。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/cf777be7a9cdc51d2f863e8e6e1ff8e2"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/d700392b65681f0b63b6195da76a795f?ul=um5Lu6fapX3jCH2Lo5chbGLBKdKCou4Oqu9xaDM8gi4HWZ_OK_MOpPHftg.6huEJDnI1Zuj</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8642</guid>  
+      <pubDate>Fri, 24 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　「会場の参加者が盛り上がるAWSを使ったアプリを一緒につくってください」――開発者向けイベント「デベロッパーカンファレンス」（通称：DevCon。AWS Summit Tokyoとの併催）を今年初めて開催するアマゾン データ サービス ジャパン。同社はこのイベントを成功させるため、会場のイベント参加者が盛り上がるアマゾン ウェブ サービス（以下、AWS）のアプリの開発を、ギークな女優として人気急上昇の池澤あやかさんに依頼したのでした。本稿ではその制作の模様を3回にわたってお届けします。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/d700392b65681f0b63b6195da76a795f"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/123ccdd3892e02f364b5a46050cec4fa?ul=7Xm2BzGbH_Vlo4Ud.UyOuBf0x8m3PClXiY4jGQmQWbMBUJoXz402yOy9akIwog6ieLO5iri</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8560</guid>  
+      <pubDate>Fri, 24 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　この連載では、フリーのVM環境「Cloudera Quick Start VM」を使って、ビッグデータ分析に必要な各種技術（データの取込み、非構造化データの分析、機械学習、全文検索など) を学習します。この連載を読むことで、ビッグデータ分析基盤に必要な基礎技術を学ぶことができます。第1回では、VM環境のダウンロードと起動、RDBMSからHadoopへのデータのインポート、Hadoop上でのテーブルの作成を行います。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/123ccdd3892e02f364b5a46050cec4fa"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/bde561ea4fc33131680d2efd3b824db7?ul=O9ZQ1ZlnRviyZJ_afKwh.hB4eeMKGQvFdTGP5_5VV23_9MfFmnixjFOlXwocf7m7C8sRWLR</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8676</guid>  
+      <pubDate>Thu, 23 Apr 2015 18:30:00 +0900</pubDate>  
+      <description><![CDATA[<p>　米Googleは、Android Wear、Android for Work、NFC、スクリーンキャプチャに対応した新たなAndroidのサンプルコードを、GitHub上の「Google Samples」レポジトリで公開したことを、「Android Developers Blog」にて4月22日（現地時間）に発表した。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/bde561ea4fc33131680d2efd3b824db7"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/b66018613eccddd0eb1ce7a12de99ccc?ul=ktNc7jJVaAMuYY3kTnv7OtKBgki.wT00Sbk38CkPvC3tEOG0jh0.eFGQAMPEH2tKqAqs8WY</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8611</guid>  
+      <pubDate>Thu, 23 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　「LPIC対策といえばこれ」と大好評の翔泳社「Linux教科書」シリーズより、『Linux教科書 LPICレベル2 スピードマスター問題集 Version4.0対応』が4月16日（木）に刊行されました。模擬問題で本番に備えましょう！
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/b66018613eccddd0eb1ce7a12de99ccc"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/1306cce374b2fb5098619d9b4895d743?ul=1JHMsgNjGCuNoZp_yWWUzzZRk5G2n_NsAFqHG5Rqyb99h7tsayAqvKfIgeKw.VRi5EMxgaf</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8575</guid>  
+      <pubDate>Thu, 23 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　Javaの後継を担うものとして、注目を集めている「Scala」。サイバーエージェントのアドテクスタジオでは数々の新しいプロダクトを短期開発し続けており、中でもアドテクスタジオ設立当初より注力している「Scala」を採用した開発に積極的に取り組んでいる。新しい技術をどのように採用し、メンバーで取り組んできたのか。また戸惑いやトラブルはなかったのか。「Developers Summit 2015 Growth!」では、同社で「LODEO」開発責任者を務めるサーバサイドエンジニアの新田智啓氏がこの導入と活用の経緯について紹介し、続いて後半では、同社Dynalystサーバサイドエンジニアの韓翔元氏が「Scala」を始める際にハードルとされる「モナド」について具体的な技術解説を行った。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/1306cce374b2fb5098619d9b4895d743"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>インフラジスティックス、統合開発コンポーネントスイート「Infragistics Ultimate 2015 Vol.1」日本語版を発売</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/c68cdebc91c04a66f33a7ba7e6eeae33?ul=5vo6cEy_t6SZP23rX.LOHOoZ9tMLpMogBPezPDOErNQjZxXgpAz5smEGdOWb6oVFmYSWuYb</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8675</guid>  
+      <pubDate>Wed, 22 Apr 2015 14:35:00 +0900</pubDate>  
+      <description><![CDATA[<p>　インフラジスティックスは、従来Windowsデスクトップのみに提供されていたようなエンタープライズ向けアプリケーションを、HTML5／jQuery、ASP.NET MVCなどの最新技術を利用して、さまざまなOSやブラウザで利用可能なWebアプリケーションに移行できる統合開発コンポーネントスイート「Infragistics Ultimate 2015 Vol.1」の日本語版を、4月22日に発売した。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/c68cdebc91c04a66f33a7ba7e6eeae33"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>グレープシティ、Windowsフォームアプリをタッチ対応にする「MultiTouch for Windows Forms」と「ComponentOne Studio」で特許権を取得</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/f832280c5f8f6de84007daf590e2ca70?ul=F4EP195IsxVf.0tWNha8A1uLqaSPIfU1iy1yIvhze5BF9Dx1_soxTPygOKEJ5k_ibrKjwKk</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8674</guid>  
+      <pubDate>Wed, 22 Apr 2015 14:35:00 +0900</pubDate>  
+      <description><![CDATA[<p>　グレープシティは、独自開発したソフトウェア開発者向けコンポーネント製品「MultiTouch for Windows Forms」および「ComponentOne Studio」に関する特許権を、3月6日に取得した。特許番号は第5705383号で、名称は「タッチ操作対応プログラム・コード変換方法およびプログラム」。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/f832280c5f8f6de84007daf590e2ca70"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>【デブサミ2015】20-E-3 レポート　クラウドガバナンス入門 ～失敗から学ぶ、組織でクラウドを活かすために大切なこと</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/f3b516c29345cbdb0c39469c0a57d3f2?ul=RW71YI2u.6Ydvb.FYjP5B9tPv_qfXQreO96gm4.k19De4uJeg1UCfRkl.t53vU3X0xIqaqK</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8586</guid>  
+      <pubDate>Wed, 22 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　現在、日本マイクロソフト株式会社のクラウドソリューションアーキテクトとして活躍されている吉田パクえ氏。「パクえ」というのは「パブリッククラウドえばんじぇりすと」の頭文字を取ったもので、本名である吉田雄哉氏の「別名」になるのだそうです。この名前が示す通り、氏はこれまでにパブリッククラウドの利活用に関するノウハウを多くの方々にお届けすることをミッションとして活動してきました。当セッションでは、吉田パクえ氏による、クラウド利活用の際の組織運営の在り方について、これまでの経験を活かしたコツに関する紹介内容をレポートしていきます。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/f3b516c29345cbdb0c39469c0a57d3f2"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>【デブサミ2015】19-A-L レポート　アドテク×人工知能 ～人工知能による予測・自動化がスマホアプリ広告を未来へ導く</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/bfa84bb41b30a75159bb20d89e3df0e1?ul=tUlfzoSrnILuWJSt_VasdKACLNvIOkEd9Fb5Rlj058FHsPcdsCNeIoNLF6tiIm6frdxhC9G</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8574</guid>  
+      <pubDate>Wed, 22 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　スマートデバイスの普及もあいまって、多様化、複雑化が進むオンラインマーケティング。効率化や効果向上を目的とした自動化が求められる今、CyberZでは人工知能や機械学習を積極的に活用しつつあるという。「Developers Summit 2015 Growth!」には、同社取締役の市川陽氏が登壇。広告効果測定ツール「Force Operation X」におけるデータを基軸とした検証・実行の様子と、将来における人工知能活用の可能性について紹介した。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/bfa84bb41b30a75159bb20d89e3df0e1"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>AWSマネジメントコンソールの表示が日本語化、従来の英語表示へ戻すことも可能</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/3d270cc7fa7c67190a0720dc381b61e3?ul=fBm6XuSCqRPAM0JNM3UTv057BgCVixwX.6dpCzyP.mLZA.FX7II.8pjP.VelWU8dauMevch</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8673</guid>  
+      <pubDate>Wed, 22 Apr 2015 11:55:00 +0900</pubDate>  
+      <description><![CDATA[<p>　Amazon Web Services公式ブログにおいて、4月21日、AWSの操作に使用する「AWSマネジメントコンソール」が日本語、中国語表示に対応したと発表された。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/3d270cc7fa7c67190a0720dc381b61e3"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>「正規表現と後方参照」　～マンガでプログラミング用語解説</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/af5214ff024318e2278a1b65cfa36a7d?ul=ap.XmX0CKZ3vbEH5P2YD7eZ011AITP0EN8P6NIsLQTs8FF6Eh6s_tmQUM9bjGnRe.H73RIY</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8497</guid>  
+      <pubDate>Tue, 21 Apr 2015 14:00:00 +0900</pubDate>  
+      <description><![CDATA[<p>　この連載は、マンガで分かるプログラミング用語辞典です。気軽に読み流せるマンガと、テキストによる詳しい解説で、プログラミング未経験者がつまづきがちな専門用語・概念をやさしく読み解き、よりスムーズな学習を手助けします。市販のプログラミング入門書の副教材としてもぜひご活用ください。今回解説するのは、「正規表現における参照の使い方」です。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/af5214ff024318e2278a1b65cfa36a7d"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>オープンソースのダッシュボード＆グラフ作成ツール「Grafana 2.0」の安定版がリリース</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/df59707fcac351f222b412cec3741e1d?ul=.SUelHCgDizpELf.0DntqZF6zL55zyI_op4.eLQhxwlFoKT_66QiTq_gJSQ5dYzxeZMAeME</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8670</guid>  
+      <pubDate>Tue, 21 Apr 2015 13:45:00 +0900</pubDate>  
+      <description><![CDATA[<p>　Torkel Ödegaard氏は、オープンソースの情報表示ダッシュボード＆グラフ作成ツール「Grafana 2.0」の安定版を、4月20日（現地時間）にリリースした。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/df59707fcac351f222b412cec3741e1d"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>エントリー〆切間近！ 朝日放送、「イベント×IT×モノづくり」をテーマにハッカソンを開催、優秀賞は商品化も</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/6297992882327754e0531e46fe9c1810?ul=eqvkTAys3TpQjZAZ4eKD7DRyanvIsHzwo4iiie9r.mFoE_4wfDUyQDN1KKnP96TFAHPaQFR</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8669</guid>  
+      <pubDate>Mon, 20 Apr 2015 17:30:00 +0900</pubDate>  
+      <description><![CDATA[<p>　朝日放送は、「イベント×IT×モノづくり」 をテーマとした「ABC Hackathon」を5月9～11日、大阪市内にて開催する。エントリーは4月30日までで、参加は無料。最優秀賞・優秀賞の作品は商品化の可能性もある。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/6297992882327754e0531e46fe9c1810"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>統計解析言語の最新版「R 3.2.0」がリリース、Windows向けに新たにインストーラーを提供</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/7ee3470e959dc3ee4e1363bb190abaad?ul=hHyf4dpRpEAAzjxvBAwPrkIYnQ5HZqdwKKjXB8oyi00vfbaw9drG5CvVo0_u5j3KywTH24w</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8667</guid>  
+      <pubDate>Mon, 20 Apr 2015 15:35:00 +0900</pubDate>  
+      <description><![CDATA[<p>　統計解析言語であるRのコア開発チームは、最新版となる「R 3.2.0」（コードネーム：Full of Ingredients）を、4月16日（現地時間）にリリースした。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/7ee3470e959dc3ee4e1363bb190abaad"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>米Facebook、iOS向けネイティブ開発環境「React Native v0.4」をリリース</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/37fc2db0d92ce28114e5b42a0490d3cc?ul=kVZo1d3609LV51oC4Df2PxZFuer6V6Yp6v6MUycDmt.YCaipUYKUhBKdRm7QJcsxIYhPDwQ</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8666</guid>  
+      <pubDate>Mon, 20 Apr 2015 15:30:00 +0900</pubDate>  
+      <description><![CDATA[<p>　米Facebookは、iOS向けネイティブ開発環境の最新版「React Native v0.4」を、4月17日（現地時間）にリリースした。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/37fc2db0d92ce28114e5b42a0490d3cc"/></p>]]></description> 
+    </item>  
+    <item> 
+      <title>大手ゲームエンジンUnity 5／UE4／Cocos2dにVisual Studio Communityが付属</title>  
+      <link>http://rss.rssad.jp/rss/artclk/DlzMEkU2485N/9f7ed0eaa6197532a4c4611d1ea5a46b?ul=p7L3TN7MFui7WD.P0AfFnChh.s4rtrfSEgVhpP0qJwb1nz7Sql2TGfWYktNcO0_w4ucJhZP</link>  
+      <guid isPermaLink="true">http://codezine.jp/article/detail/8665</guid>  
+      <pubDate>Mon, 20 Apr 2015 15:25:00 +0900</pubDate>  
+      <description><![CDATA[<p>　米Microsoftと、大手ゲームエンジンプロバイダーのUnity Technologies、Epic Games、Chukong Technologiesの3社は、それぞれのゲームエンジンへの、Visual Studio Communityエディションのバンドルについて、4月17日（現地時間）に合意した。
+
+
+<img border="0" width="1" height="1" src="http://rss.rssad.jp/rss/artimg/DlzMEkU2485N/9f7ed0eaa6197532a4c4611d1ea5a46b"/></p>]]></description> 
+    </item> 
+  </channel> 
+</rss>

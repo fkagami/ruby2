@@ -1,0 +1,1568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>CodeZine：プログラミングに役立つソースコードが満載な開発者のための実装系Webマガジン</title>
+<meta name="keywords" content="プログラミング,開発,ソースコード,Java,.NET,Windows,C++,C#,VB,CodeZine">
+<meta name="description" content="開発者のための実装系Webソースコードマガジン。会員登録無料。開発者,ソースコード,プログラミング,Java,Windows,.NET,C#,VB,C++,CodeZine">
+<link title="RSS new article" href="/rss/new/20/index.xml" type="application/rss+xml" rel="alternate">
+<link rel="stylesheet" type="text/css" href="/static/common/css/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/layout.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/czmain.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/skyscraper.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/sidebar.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/header.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/footer.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/toppage.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/article.css" media="all">
+<link rel="stylesheet" type="text/css" href="/static/common/css/listbox.css" media="all">
+
+<script type="text/javascript" src="/static/common/js/jquery.js"></script>
+<script type="text/javascript" src="/static/common/js/lightbox_plus.js"></script>
+<script type="text/javascript" src="/static/common/js/printf.js"></script>
+<script type="text/javascript" src="/static/common/js/dnavi.js"></script>
+<script type="text/javascript" src="/static/common/js/adparser.js"></script>
+<script type="text/javascript" src="/static/common/js/validator.js"></script>
+<script type="text/javascript" src="/static/common/js/std.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	
+	<link rel="canonical" href="http://codezine.jp/"/> 
+	
+<script type="text/javascript" src="/static/common/login/login.js"></script>
+<link rel="stylesheet" href="/static/common/login/login.css" type="text/css" />
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-149484-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="/static/common/js/gae.js"></script>
+
+<script type='text/javascript'>
+	var gptadslots=[];
+	(function(){
+		var useSSL = 'https:' == document.location.protocol;
+		var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+	})();
+</script> 
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+googletag.defineSlot('/5473248/CZ_PT_1', [145, 49], 'div-gpt-ad-1393229197983-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_1', [145, 50], 'div-gpt-ad-1393228911687-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_2', [145, 49], 'div-gpt-ad-1393229236273-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_2', [145, 50], 'div-gpt-ad-1393228961100-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_3', [145, 49], 'div-gpt-ad-1393229358759-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_3', [145, 50], 'div-gpt-ad-1393228984749-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_4', [145, 49], 'div-gpt-ad-1393229391220-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_4', [145, 50], 'div-gpt-ad-1393229016288-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_5', [145, 49], 'div-gpt-ad-1393229428709-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_5', [145, 50], 'div-gpt-ad-1393229038023-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_6', [145, 49], 'div-gpt-ad-1393229451841-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_6', [145, 50], 'div-gpt-ad-1393229061793-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_7', [145, 49], 'div-gpt-ad-1393229480634-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_7', [145, 50], 'div-gpt-ad-1393229085168-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_8', [145, 49], 'div-gpt-ad-1393229509372-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_8', [145, 50], 'div-gpt-ad-1393229108826-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_9', [145, 49], 'div-gpt-ad-1393229543720-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_9', [145, 50], 'div-gpt-ad-1393229134807-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PT_10', [145, 49], 'div-gpt-ad-1393229567441-0').addService(googletag.pubads());
+googletag.defineSlot('/5473248/CZ_PI_10', [145, 50], 'div-gpt-ad-1393229157020-0').addService(googletag.pubads());
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+});
+</script>
+
+<meta property="og:title" content="CodeZine：プログラミングに役立つソースコードが満載な開発者のための実装系Webマガジン" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://codezine.jp/" />
+<meta property="og:image" content="http://codezine.jp/static/common/images/logo.gif" />
+<meta property="og:site_name" content="CodeZine" />
+<meta property="og:description" content="開発者のための実装系Webソースコードマガジン。会員登録無料">
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:admins" content="100002509171990" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="codezine">
+
+</head>
+<body>
+
+
+<a name="PAGETOP" id="PAGETOP"></a>
+
+<!-- gnavi -->
+<div id="gnavi"></div>
+<!-- /gnavi -->
+
+
+<div id="wrapper">
+
+<!-- header -->
+<script type="text/javascript">
+<!--
+var impAserver = "http://as.se.impact-ad.jp";
+var impAtarget = "/SITE=CZ/AREA=REDIRECT_WB/AAMSZ=640X480/OENCJP=UTF8";
+impArnd = Math.round(Math.random() * 100000000);
+document.write('<scr');
+document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '">');
+document.write('<\/scr');
+document.write('ipt>');
+-->
+</script>
+
+<div id="header">
+<div id="header_in">
+
+
+<!-- header==logo -->
+<div id="logo">
+<a href="/" gaeaction="Header-h_Logo" sclabelbg="ロゴ"><img src="/static/common/images/logo.gif" alt="CodeZine [コードジン]" width="186" height="48"></a>
+</div>
+<!-- /header==logo -->
+
+
+<!-- header==topbanner -->
+<div id="topbanner">
+<div class="banner">
+
+
+<!-- ad -->
+<script type="text/javascript" language="JavaScript">
+<!--
+var impAserver = "http://as.se.impact-ad.jp";
+var impAtarget = "/SITE=CZ/AREA=HEAD.SUPER/AAMSZ=728X90/OENCJP=UTF8";
+impArnd = Math.round(Math.random() * 100000000);
+document.write('<scr');
+document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '">');
+document.write('<\/scr');
+document.write('ipt>');
+//-->
+</script>
+<noscript>
+<iframe 
+	src="http://as.se.impact-ad.jp/hserver/SITE=MZ/AREA=HEAD.SUPER/AAMSZ=728X90/OENCJP=UTF8" 
+	width="728" height="90"
+	scrolling="no" frameborder="0" marginheight="0" marginwidth="0" style="width:728px; height:90px; background-color:transparent;">
+</iframe>
+</noscript>
+<!-- /ad -->
+
+</div>
+</div>
+<!-- /header==topbanner -->
+
+
+<div class="clear"><hr></div>
+</div>
+</div>
+
+<!-- /header -->
+
+
+<!-- header==headmenu -->
+<div id="headmenu">
+	<!-- header==headmenu==NaviMenu -->
+	<!--menu -->
+<div class="NaviMenu">
+<ul id="menu">
+<li id="menu-01" title="ホーム" class="active"><a href="/" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>ホーム</span></a></li>
+<li id="menu-02" title="ニュース"><a href="/news/" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>ニュース</span></a></li>
+<li id="menu-03" title="記事"><a href="/article/" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>記事</span></a></li>
+<li id="menu-04" title="注目ブックマーク"><a href="/bookmark/" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>注目ブックマーク</span></a></li>
+<li id="menu-07" title="コミュニティ"><a href="/community/" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>コミュニティ</span></a></li>
+<li id="menu-10" title="デブサミ"><a href="http://daikoku.ebis.ne.jp/tr_set.php?argument=YdgXyNfQ&ai=a51db77693ee59" target="_blank" gaeaction="Header-h_MenuMain" sclabelbg="%TITLE%"><span>デブサミ</span></a></li>
+
+</ul>
+</div>
+<!--menu -->
+
+	<!-- /header==headmenu==NaviMenu -->
+	<!-- header==headmenu==SecondMenu -->
+	<!-- header==headmenu==SecondMenu -->
+
+<div class="SecondMenu">
+<ul>
+<li><a href="/article/tag/167" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">C#</a></li>
+<li><a href="/article/tag/166" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">Java</a></li>
+<li><a href="/article/tag/169" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">VB.NET</a></li>
+<li><a href="/article/tag/165" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">C++</a></li>
+<li><a href="/article/tag/170" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">PHP</a></li>
+<li><a href="/article/tag/224" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">Ruby</a></li>
+<li><a href="/article/tag/171" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">Perl</a></li>
+<li><a href="/article/tag/220" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">JavaScript</a></li>
+<li><a href="/article/tag/628" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">SQL</a></li>
+<li><a href="/article/tag/670" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">Adobe</a></li>
+<li><a href="/article/tag/" gaeaction="Header-h_MenuSub" sclabelbg="%TITLE%">言語一覧</a></li>
+</ul>
+</div>
+<!-- /header==headmenu==SecondMenu -->
+
+	<!-- /header==headmenu==SecondMenu -->
+</div>
+<!-- /header==headmenu -->
+
+
+<div class="clear"><hr></div>
+
+
+<!-- contents -->
+<div id="contents">
+
+
+<!-- contents==main -->
+<div id="main">
+<!-- inner -->
+<div class="inner">
+
+
+
+	
+
+
+
+
+<!-- special -->
+<div id="pickup_list">
+<div class="app">
+<div class="apptitle"><span class="apptitle_text">注目記事</span></div>
+<dl>
+
+	<dl>
+		<dt><a href="/article/detail/8642" gaeaction="Parts-p_Arena" sclabelbg="8642:%TITLE%">【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場</a></dt>
+		
+		<dd class="summary_image"><img src="/static/images/article/8642/aws_devcon_2015.png" width="80px" alt="" border="0" ></dd>
+		
+		
+		<dd class="writer">
+		
+			<a href="/author/1428">坂井 直美</a>著
+		
+		</dd>
+		<dd class="summary_text">　「会場の参加者が盛り上がるAWSを使ったアプリを一緒につくってください」――開発者向けイベント「デベロッパーカンファレンス」（通称：DevCon。AWS Summ...<a href="/article/detail/8642"  gaeaction="Parts-p_Arena" sclabelbg="8642:%TITLE%">（続きを読む）</a></dd>
+	</dl>
+
+	<dl>
+		<dt><a href="/article/detail/8560" gaeaction="Parts-p_Arena" sclabelbg="8560:%TITLE%">フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する</a></dt>
+		
+		<dd class="summary_image"><img src="/static/images/article/8560/8560_t.gif" width="80px" alt="" border="0" ></dd>
+		
+		
+		<dd class="writer">
+		
+			<a href="/author/1521">嶋内 翔（Cloudera株式会社）</a>著
+		
+		</dd>
+		<dd class="summary_text">　この連載では、フリーのVM環境「Cloudera Quick Start VM」を使って、ビッグデータ分析に必要な各種技術（データの取込み、非構造化データの分析、機械学習...<a href="/article/detail/8560"  gaeaction="Parts-p_Arena" sclabelbg="8560:%TITLE%">（続きを読む）</a></dd>
+	</dl>
+
+	<dl>
+		<dt><a href="/article/detail/8611" gaeaction="Parts-p_Arena" sclabelbg="8611:%TITLE%">LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行</a></dt>
+		
+		<dd class="summary_image"><img src="/static/images/article/8611/8611_01.jpg" width="80px" alt="" border="0" ></dd>
+		
+		
+		<dd class="writer">
+		
+			<a href="/author/1526">渡部拓也</a>著
+		
+		</dd>
+		<dd class="summary_text">　「LPIC対策といえばこれ」と大好評の翔泳社「Linux教科書」シリーズより、『Linux教科書 LPICレベル2 スピードマスター問題集 Version4.0対応』が4月16日（...<a href="/article/detail/8611"  gaeaction="Parts-p_Arena" sclabelbg="8611:%TITLE%">（続きを読む）</a></dd>
+	</dl>
+
+
+</div>
+</div>
+<!-- /special -->
+
+
+<!-- ad -->
+<!--  #contents==#main==ad list -->
+<script type="text/javascript">
+<!--
+impAserver = "http://as.se.impact-ad.jp";
+impAtarget1 = "/AAMB1/SITE=CZ/AREA=MIDDLE.TEXT/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget2 = "/AAMB2/SITE=CZ/AREA=MIDDLE.TEXT/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget3 = "/AAMB3/SITE=CZ/AREA=MIDDLE.TEXT/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget4 = "/AAMB4/SITE=CZ/AREA=MIDDLE.TEXT/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget  = impAtarget1 + impAtarget2 + impAtarget3 + impAtarget4;
+impArnd = Math.round(Math.random() * 100000000);
+document.write('<scr');
+document.write('ipt src="' + impAserver + '/bservers/AAMALL/acc_random=' + impArnd + '/pageid=' + impApid + impAtarget+'">');
+document.write('<\/scr');
+document.write('ipt>');
+//-->
+</script>
+<script type="text/javascript">
+<!--
+var impAnads = 4;
+var impAbs = new Array(impAnads);
+for ( i = 0 ; i < impAnads ; i++) {
+	eval('impAbs['+i+'] = (typeof(AAMB' + (i+1) + ') != "undefined")?AAMB' + (i+1) + ':"";');
+	impAbs[i] = (impAbs[i].indexOf('AESE') == -1)?impAbs[i]:'';
+}
+var impAads = impA_rotate(impAbs);
+-->
+</script>
+<div class="ad_list">
+<script type="text/javascript">if (typeof(impAads[0]) !='undefined' && impAads[0] !=""){document.write(impAads[0]);}</script>
+<script type="text/javascript">if (typeof(impAads[1]) !='undefined' && impAads[1] !=""){document.write(impAads[1]);}</script>
+<!--
+<script type="text/javascript">if (typeof(impAads[2]) !='undefined' && impAads[2] !=""){document.write(impAads[2]);}</script>
+<script type="text/javascript">if (typeof(impAads[3]) !='undefined' && impAads[3] !=""){document.write(impAads[3]);}</script>
+-->
+</div>
+<!--  /#contents==#main==ad list -->
+
+<!-- /ad -->
+
+
+<!-- news_list -->
+<div id="news_list">
+<div class="app">
+	<div class="apptitle"><span class="apptitle_text">ニュース</span></div>
+	<ul>
+	
+		<li class="spot">
+		<a href="/article/detail/8681" gaeaction="Parts-p_NewsList" sclabelbg="8681:%TITLE%">IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説</a>
+		<span class="date">[04/24]
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		</span>
+		</li>
+    
+	
+		<li class="spot">
+		<a href="/article/detail/8680" gaeaction="Parts-p_NewsList" sclabelbg="8680:%TITLE%">データサイエンス向けのPython統合開発環境「Rodeo」をリリース</a>
+		<span class="date">[04/24]
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		</span>
+		</li>
+    
+	
+		<li class="spot">
+		<a href="/article/detail/8679" gaeaction="Parts-p_NewsList" sclabelbg="8679:%TITLE%">JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース</a>
+		<span class="date">[04/24]
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		</span>
+		</li>
+    
+	
+		<li class="spot">
+		<a href="/article/detail/8678" gaeaction="Parts-p_NewsList" sclabelbg="8678:%TITLE%">GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称</a>
+		<span class="date">[04/24]
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		</span>
+		</li>
+    
+	
+		<li class="spot">
+		<a href="/article/detail/8676" gaeaction="Parts-p_NewsList" sclabelbg="8676:%TITLE%">Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開</a>
+		<span class="date">[04/23]
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		</span>
+		</li>
+    
+    <div style="margin-left:3px">
+    <!--  #contents==#main==ad list -->
+<script type="text/javascript">
+<!--
+impAserver = "http://as.se.impact-ad.jp";
+impAtarget1 = "/AAMB1/SITE=CZ/AREA=MIDDLE.TEXT.NUNDER/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget2 = "/AAMB2/SITE=CZ/AREA=MIDDLE.TEXT.NUNDER/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget3 = "/AAMB3/SITE=CZ/AREA=MIDDLE.TEXT.NUNDER/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget4 = "/AAMB4/SITE=CZ/AREA=MIDDLE.TEXT.NUNDER/AAMSZ=3X3/OENCJP=UTF8";
+impAtarget  = impAtarget1 + impAtarget2 + impAtarget3 + impAtarget4;
+impArnd = Math.round(Math.random() * 100000000);
+document.write('<scr');
+document.write('ipt src="' + impAserver + '/bservers/AAMALL/acc_random=' + impArnd + '/pageid=' + impApid + impAtarget+'">');
+document.write('<\/scr');
+document.write('ipt>');
+//-->
+</script>
+<script type="text/javascript">
+<!--
+var impAnads = 4;
+var impAbs = new Array(impAnads);
+for ( i = 0 ; i < impAnads ; i++) {
+	eval('impAbs['+i+'] = (typeof(AAMB' + (i+1) + ') != "undefined")?AAMB' + (i+1) + ':"";');
+	impAbs[i] = (impAbs[i].indexOf('AESE') == -1)?impAbs[i]:'';
+}
+var impAads = impA_rotate(impAbs);
+-->
+</script>
+<div class="ad_list">
+<script type="text/javascript">if (typeof(impAads[0]) !='undefined' && impAads[0] !=""){document.write(impAads[0]);}</script>
+<script type="text/javascript">if (typeof(impAads[1]) !='undefined' && impAads[1] !=""){document.write(impAads[1]);}</script>
+<!--
+<script type="text/javascript">if (typeof(impAads[2]) !='undefined' && impAads[2] !=""){document.write(impAads[2]);}</script>
+<script type="text/javascript">if (typeof(impAads[3]) !='undefined' && impAads[3] !=""){document.write(impAads[3]);}</script>
+-->
+</div>
+<!--  /#contents==#main==ad list -->
+
+    </div>
+	</ul>
+	<div class="morelist"><p><a href="/news/">ニュース一覧</a></p></div>
+</div>
+</div>
+<!-- /news_list -->
+
+
+<!-- series_list -->
+<!-- #contents==#main==#update_list -->
+<div id="update_list">
+<!-- contents==main==app -->
+<div class="app">
+<div class="apptitle"><span class="apptitle_text">新着記事</span></div>
+	<ul>
+	
+		<li class="spot">
+		<a href="/article/detail/8642" gaeaction="Parts-p_ArticleList" sclabelbg="8642:%TITLE%">【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場</a>
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8560" gaeaction="Parts-p_ArticleList" sclabelbg="8560:%TITLE%">フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する</a>
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8611" gaeaction="Parts-p_ArticleList" sclabelbg="8611:%TITLE%">LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行</a>
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8575" gaeaction="Parts-p_ArticleList" sclabelbg="8575:%TITLE%">【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法</a>
+		<img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new">
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8586" gaeaction="Parts-p_ArticleList" sclabelbg="8586:%TITLE%">【デブサミ2015】20-E-3 レポート　クラウドガバナンス入門 ～失敗から学ぶ、組織でクラウドを活かすために大切なこと</a>
+		
+		<br><br>
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8574" gaeaction="Parts-p_ArticleList" sclabelbg="8574:%TITLE%">【デブサミ2015】19-A-L レポート　アドテク×人工知能 ～人工知能による予測・自動化がスマホアプリ広告を未来へ導く</a>
+		
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8497" gaeaction="Parts-p_ArticleList" sclabelbg="8497:%TITLE%">「正規表現と後方参照」　～マンガでプログラミング用語解説</a>
+		
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8636" gaeaction="Parts-p_ArticleList" sclabelbg="8636:%TITLE%">データサイエンティストを育成する試み　～PyData.Tokyo Tutorial & Hackathon #1 イベントレポート</a>
+		
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8625" gaeaction="Parts-p_ArticleList" sclabelbg="8625:%TITLE%">ASP.NET Identityでユーザーに役割（ロール）を持たせる</a>
+		
+		
+		</li>
+	
+		<li class="spot">
+		<a href="/article/detail/8606" gaeaction="Parts-p_ArticleList" sclabelbg="8606:%TITLE%">コンテナ仮想化ツールDockerをつかったコードによるWebアプリケーション実行環境の構築</a>
+		
+		
+		</li>
+	
+	</ul>
+<div class="morelist"><p><a href="/article/">新着記事一覧</a></p></div>
+</div>
+<!-- /app -->
+</div>
+<!-- /#contents==#main==#update_list -->
+
+
+
+<!-- ad -->
+<div class="adlink">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+
+</table>
+</div>
+
+
+
+<!-- /ad -->
+
+
+<!-- #contents==#main==series_item -->
+
+	
+	<div class="series_item">
+	<div class="series_item_l">
+	
+	<div class="itemtitle"><a href="/article/tag/732" gaeaction="Parts-p_CategoryArticleList" sclabelbg="732:%TITLE%"><span class="itemtitle_text">CRS</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/4248" gaeaction="Parts-p_CategoryArticleList" sclabelbg="4248:%TITLE%">エンタープライズ向けRIAに求められるUIとは　―― 日本の業務システムに特化した「Biz/Browser」</a>
+				
+				<a href="/article/detail/4248" gaeaction="Parts-p_CategoryArticleList" sclabelbg="4248:%TITLE%"><img src="/static/images/article/4248/t.jpg" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　RIAというと、主に視覚的な表現性やユーザー・インターフェースが注目されている。一方、アクシスソフトのリッチクライアント製品『Biz/Browser』は、業務効率向上を主眼にしたエンタープライズ向けのRIA製品だ。 同社の担当者に、Biz/Browserの特徴や開発ポリシーなどについて話を聞いた。</p>
+				<span class="date">［2009/09/07］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+		<div class="morelist"><p><a href="/article/tag/732" gaeaction="Parts-p_CategoryArticleList" sclabelbg="732:%TITLE%">CRS記事一覧</a></p></div>
+	</div>
+	
+
+	
+	<div class="series_item_r">
+	
+	<div class="itemtitle"><a href="/article/tag/721" gaeaction="Parts-p_CategoryArticleList" sclabelbg="721:%TITLE%"><span class="itemtitle_text">インタビュー</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8596" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8596:%TITLE%">JavaScriptでぶつかる「壁」をブレイクスルーしよう！　 『ブレイクスルーJavaScript』編集者インタビュー</a>
+				
+				<a href="/article/detail/8596" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8596:%TITLE%"><img src="/static/images/article/8596/8596_01.jpg" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　JavaScriptを学んでいるとき、仕事の現場で使っているとき、「壁」を感じたことはありませんか？　多くのフロントエンドエンジニアがぶつかる「壁」として5つの項目を深堀りし、おいしいところだけを学べる『ブレイクスルーJavaScript』（4月16日発売）。その担当編集者である関根さんに話を聞きました。</p>
+
+				<span class="date">［2015/04/16］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/8570" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8570:%TITLE%">世界一「高速」「高精度」なネット広告配信システム作りに挑むRCOのエンジニアたち</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8325" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8325:%TITLE%">翻訳メンバーが明かす ～ テスト自動化研究会が『システムテスト自動化 標準ガイド』を翻訳・刊行した理由</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8358" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8358:%TITLE%">懐かしい？ いいえ、SAP Crystal Reportsは今も今後も「現役」です――SAPジャパンに聞く「SAP Crystal Reports」の現在</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8284" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8284:%TITLE%">日々コードに触れる人にこそ体験してほしい　～アジャイルアカデミー「実践リーダブルコード」講座</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/721" gaeaction="Parts-p_CategoryArticleList" sclabelbg="721:%TITLE%">インタビュー記事一覧</a></p></div>
+	</div>
+	</div>
+
+	
+	<div class="series_item">
+	<div class="series_item_l">
+	
+	<div class="itemtitle"><a href="/article/tag/765" gaeaction="Parts-p_CategoryArticleList" sclabelbg="765:%TITLE%"><span class="itemtitle_text">WebRTC</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8099" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8099:%TITLE%">ビデオチャットもさくっと作れる！ WebRTCによるブラウザ間リアルタイム通信はじめの一歩</a>
+				
+				<a href="/article/detail/8099" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8099:%TITLE%"><img src="/static/images/article/8099/8099_00.png" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　本連載では、Web上でリアルタイムコミュニケーションを実現する規格「WebRTC」について、API仕様の解説やライブラリを用いたアプリケーションの作成などを説明していきます。連載第1回となる今回は、簡単なビデオチャットアプリケーションを作成します。APIやその使い方は、実際にアプリケーションで動かしてみると理解が深まります。カメラ付きノートPC、もしくはUSBカメラやマイクなどをご準備の上、試してみてください。</p>
+
+				<span class="date">［2014/11/20］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+		<div class="morelist"><p><a href="/article/tag/765" gaeaction="Parts-p_CategoryArticleList" sclabelbg="765:%TITLE%">WebRTC記事一覧</a></p></div>
+	</div>
+	
+
+	
+	<div class="series_item_r">
+	
+	<div class="itemtitle"><a href="/article/tag/164" gaeaction="Parts-p_CategoryArticleList" sclabelbg="164:%TITLE%"><span class="itemtitle_text">C</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/7858" gaeaction="Parts-p_CategoryArticleList" sclabelbg="7858:%TITLE%">制御システム用ソフトウェアの脆弱性対策　～CERTコーディングスタンダードの活用～</a>
+				
+				<a href="/article/detail/7858" gaeaction="Parts-p_CategoryArticleList" sclabelbg="7858:%TITLE%"><img src="/static/images/article/7858/7858_t.gif" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　年度頭からOpenSSLの脆弱性が世間を賑わせていましたが、Webの世界だけでなく、社会インフラを支える制御システムソフトウェア（ICSソフトウェア）においても脆弱性対策を留意しておく必要があります。本稿では、米国のICS-CERTが公開している脆弱性アドバイザリから見えてきたICSソフトウェアの脆弱性の傾向に加え、セキュアコーディングに特に効果的なルールを厳選して紹介します。（編集部）</p>
+
+				<span class="date">［2014/06/26］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/5348" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5348:%TITLE%">TIFFライブラリに潜む脆弱性をつぶすパッチ（その2）</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/5241" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5241:%TITLE%">Linuxのカーネルに潜む脆弱性をつぶすパッチ</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/5229" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5229:%TITLE%">Samba smbclient―書式指定文字列に潜む脆弱性</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/5171" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5171:%TITLE%">画像処理ソフトウェア「ImageMagick」の脆弱性</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/164" gaeaction="Parts-p_CategoryArticleList" sclabelbg="164:%TITLE%">C記事一覧</a></p></div>
+	</div>
+	</div>
+
+	
+	<div class="series_item">
+	<div class="series_item_l">
+	
+	<div class="itemtitle"><a href="/article/tag/723" gaeaction="Parts-p_CategoryArticleList" sclabelbg="723:%TITLE%"><span class="itemtitle_text">ネットワーク</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8494" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8494:%TITLE%">仮想ルータVyattaとVyOSを取り巻く最新情報</a>
+				
+				<a href="/article/detail/8494" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8494:%TITLE%"><img src="/static/images/article/8494/8494_t.gif" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　本連載では、さくらインターネット研究所の独自調査に基づき、クラウド時代に必要となるネットワーク仮想化とその在り方についてご紹介します。今回は仮想ルータVyattaとVyOSを取り巻く最新情報について、情報共有をしていきます。</p>
+
+				<span class="date">［2015/03/31］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/8461" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8461:%TITLE%">フロントエンド開発が捗るHTTP通信モニタリングツール「Charles」を使いこなす</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8266" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8266:%TITLE%">いまさら聞けないモバイルとIPv6ネットワークのアレコレ（後編）～モバイル端末へのIPv6アドレスの割り当てメカニズムを知る</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8265" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8265:%TITLE%">いまさら聞けないモバイルとIPv6ネットワークのアレコレ（中編）～モバイル端末の移動によるIPv6アドレスの変化を確かめる</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8264" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8264:%TITLE%">いまさら聞けないモバイルとIPv6ネットワークのアレコレ（前編）～モバイル端末からIPv6ネットワークに接続する</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/723" gaeaction="Parts-p_CategoryArticleList" sclabelbg="723:%TITLE%">ネットワーク記事一覧</a></p></div>
+	</div>
+	
+
+	
+	<div class="series_item_r">
+	
+	<div class="itemtitle"><a href="/article/tag/230" gaeaction="Parts-p_CategoryArticleList" sclabelbg="230:%TITLE%"><span class="itemtitle_text">ActionScript</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/5530" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5530:%TITLE%">JavaとActionScript 3の違い：属性操作編</a>
+				
+				<a href="/article/detail/5530" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5530:%TITLE%"><img src="/static/images/article/5530/adc_arena.gif" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　この記事は、Javaに精通した開発者の方に、ActionScript 3.0（以下AS3）がどのような言語なのか、どこがJavaと異なっているのか（あるいは同じなのか）を一覧できるようまとめたものです。今回は「属性操作編」として、具体的な例を使いながら、AS3の属性の特徴と振舞いを紹介します。</p>
+				<span class="date">［2010/11/08］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/5485" gaeaction="Parts-p_CategoryArticleList" sclabelbg="5485:%TITLE%">Java と ActionScript 3.0 の違い：文法編</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/3853" gaeaction="Parts-p_CategoryArticleList" sclabelbg="3853:%TITLE%">Flashによるマルチプレイヤーゲーム入門： 三目並べ </a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/2765" gaeaction="Parts-p_CategoryArticleList" sclabelbg="2765:%TITLE%">Flex 3で動的に項目を編集できるメニューバーを作成する</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/2881" gaeaction="Parts-p_CategoryArticleList" sclabelbg="2881:%TITLE%">Flash CS3とRoRで構築する業務アプリケーション　第2回</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/230" gaeaction="Parts-p_CategoryArticleList" sclabelbg="230:%TITLE%">ActionScript記事一覧</a></p></div>
+	</div>
+	</div>
+
+	
+	<div class="series_item">
+	<div class="series_item_l">
+	
+	<div class="itemtitle"><a href="/article/tag/758" gaeaction="Parts-p_CategoryArticleList" sclabelbg="758:%TITLE%"><span class="itemtitle_text">フロントエンド</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8172" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8172:%TITLE%">ユーザーの操作は発見の宝庫！ ユーザビリティーテストでユーザー視点に立った開発をしよう</a>
+				
+				<a href="/article/detail/8172" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8172:%TITLE%"><img src="/static/images/article/8172/8172_thumb.gif" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　「ユーザビリティーテスト」という言葉を聞いて何を想像しますか？ マジックミラー付きの実験室でユーザーが操作している様子を観察する。そういった大掛かりなイメージを持たれがちですが、ちょっとした準備で、自分たちのオフィスで日常的に実施することができます。製品が完成した時やサービスをリリースする直前だけ行うのではなく、小さな機能の実装単位でユーザビリティーを確かめてみましょう。今回は、ユーザビリティーテストとは何なのか、やることで何がわかるのか、いくつかの具体例を元にイメージを掴んでみます。</p>
+
+				<span class="date">［2014/11/07］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/7992" gaeaction="Parts-p_CategoryArticleList" sclabelbg="7992:%TITLE%">まずは「gulp」を動かしてみよう！ ～セットアップとはじめてのタスク実行</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/758" gaeaction="Parts-p_CategoryArticleList" sclabelbg="758:%TITLE%">フロントエンド記事一覧</a></p></div>
+	</div>
+	
+
+	
+	<div class="series_item_r">
+	
+	<div class="itemtitle"><a href="/article/tag/771" gaeaction="Parts-p_CategoryArticleList" sclabelbg="771:%TITLE%"><span class="itemtitle_text">障害対策</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8332" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8332:%TITLE%">知らないなんてもったいない！ 障害発生の原因を洗い出すOSSのJavaVM解析支援ツール「HeapStats」を使ってみよう</a>
+				
+				<a href="/article/detail/8332" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8332:%TITLE%"><img src="/static/images/article/8332/8332_00.png" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　Javaの障害に悩まされたことはありませんか？ 障害が発生した場合、まず速やかにサービスを復旧させ、それから原因の調査・再発の防止を行うのが一般的です。しかし、原因を探し出そうにも有用な情報が残されていなかったために解析が進まず、再び同じ障害が発生して情報が得られるまで、そのまま運用を続けるしかないことがあります。</p>
+
+				<span class="date">［2014/12/19］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+		<div class="morelist"><p><a href="/article/tag/771" gaeaction="Parts-p_CategoryArticleList" sclabelbg="771:%TITLE%">障害対策記事一覧</a></p></div>
+	</div>
+	</div>
+
+	
+	<div class="series_item">
+	<div class="series_item_l">
+	
+	<div class="itemtitle"><a href="/article/tag/710" gaeaction="Parts-p_CategoryArticleList" sclabelbg="710:%TITLE%"><span class="itemtitle_text">コラム</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8251" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8251:%TITLE%">自分たちで自分たちの技術書を作ろう ～同人誌を電子書籍で制作・頒布する技術とは？</a>
+				
+				<a href="/article/detail/8251" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8251:%TITLE%"><img src="/static/images/article/8251/8251_thumb.jpg" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　技術書はずば抜けたスキルを持った人だけが書く特別なものではありません。私たちのような普通のエンジニアが、日々の活動から得た知見を共有するためにも非常に有用です。そのために、自分たちで技術書を執筆し、読み手に届けるための方法を解説します。</p>
+
+				<span class="date">［2015/02/13］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/8291" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8291:%TITLE%">中国のPC環境ってどうなっているの？ 漢字入力は？ 文字コードは？ </a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/6582" gaeaction="Parts-p_CategoryArticleList" sclabelbg="6582:%TITLE%">効率的に情報収集をして差別化を図れ！　Twitter4J.org　山本 裕介氏</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/6390" gaeaction="Parts-p_CategoryArticleList" sclabelbg="6390:%TITLE%">「当たらなければ　どうと言うことはない」　先制攻撃7日間 - インフラエンジニアのトラブル防御策（後編）</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/6389" gaeaction="Parts-p_CategoryArticleList" sclabelbg="6389:%TITLE%">「当たらなければ　どうと言うことはない」　先制攻撃7日間 - インフラエンジニアのトラブル防御策（前編）</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/710" gaeaction="Parts-p_CategoryArticleList" sclabelbg="710:%TITLE%">コラム記事一覧</a></p></div>
+	</div>
+	
+
+	
+	<div class="series_item_r">
+	
+	<div class="itemtitle"><a href="/article/tag/742" gaeaction="Parts-p_CategoryArticleList" sclabelbg="742:%TITLE%"><span class="itemtitle_text">Android</span></a></div>
+		
+			
+				<ul class="newnum">
+				<li><a href="/article/detail/8528" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8528:%TITLE%">誰でも手軽にNTTドコモのサービスのような機能を持つアプリが作れる ～ぼっちでも雑談を楽しめるAndroidアプリを作ろう</a>
+				
+				<a href="/article/detail/8528" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8528:%TITLE%"><img src="/static/images/article/8528/8528_t.gif" alt="" width="80" height="60" class="summary_image"></a>
+				
+				<p>　「<a href="http://daikoku.ebis.ne.jp/tr_set.php?argument=YdgXyNfQ&amp;ai=a55025b8ca3ef2" target="_blank">docomo Developer support</a>」というサイトをご存じでしょうか。このサイトは、NTTドコモが公開している開発者向けのAPI提供サイトです。ここで公開されているAPIを使えば、NTTドコモのサービス「しゃべってコンシェル」などのような機能を、自作のアプリから簡単に利用できるようになります。みなさんも、公開されているAPIやSDKを使って、楽しいAndroidアプリを作ってみませんか。</p>
+
+				<span class="date">［2015/03/16］</span>
+				</li>
+				</ul>
+				<div class="clear"><hr></div>
+			
+		
+			
+				
+				<ul class="backnum">
+				
+				<li><a href="/article/detail/8454" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8454:%TITLE%">Google Glassでの画像認識アプリケーションの開発</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8430" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8430:%TITLE%">誰でも手軽にNTTドコモのサービスのような機能を持つアプリが作れる ～顔検出APIでモザイクカメラを作ろう</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8333" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8333:%TITLE%">ランタイムから迫るAndroidアプリのパフォーマンスチューニング ～ Dalvik/ART/NDKでの性能計測・比較・改善</a></li>
+				
+			
+		
+			
+				
+				<li><a href="/article/detail/8299" gaeaction="Parts-p_CategoryArticleList" sclabelbg="8299:%TITLE%">誰でも手軽にNTTドコモのサービスのような機能を持つアプリが作れる ～Androidアプリから画像認識APIを実行する</a></li>
+				
+				</ul>
+				
+			
+		
+		<div class="morelist"><p><a href="/article/tag/742" gaeaction="Parts-p_CategoryArticleList" sclabelbg="742:%TITLE%">Android記事一覧</a></p></div>
+	</div>
+	</div>
+
+<!-- #contents==#main==series_item -->
+
+
+
+
+<!-- #contents==#main==#other_list -->
+<div id="other_list">
+<ul>
+	
+	<li><a href="/article/tag/751" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">AWS</a></li>
+	
+	<li><a href="/article/tag/752" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">AWK</a></li>
+	
+	<li><a href="/article/tag/757" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">仮想化</a></li>
+	
+	<li><a href="/article/tag/747" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">データ分析</a></li>
+	
+	<li><a href="/article/tag/748" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">統計解析</a></li>
+	
+	<li><a href="/article/tag/749" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">Swift</a></li>
+	
+	<li><a href="/article/tag/750" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">Mac</a></li>
+	
+	<li><a href="/article/tag/754" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">Docker</a></li>
+	
+	<li><a href="/article/tag/755" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">インフラ</a></li>
+	
+	<li><a href="/article/tag/758" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">フロントエンド</a></li>
+	
+	<li><a href="/article/tag/759" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">タスクランナー</a></li>
+	
+	<li><a href="/article/tag/760" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">PaaS</a></li>
+	
+	<li><a href="/article/tag/761" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">Heroku</a></li>
+	
+	<li><a href="/article/tag/762" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%"> シェル</a></li>
+	
+	<li><a href="/article/tag/764" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%"> クラウド</a></li>
+	
+	<li><a href="/article/tag/765" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">WebRTC</a></li>
+	
+	<li><a href="/article/tag/766" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">ラムダ式</a></li>
+	
+	<li><a href="/article/tag/768" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">パフォーマンスチューニング</a></li>
+	
+	<li><a href="/article/tag/769" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">開発環境</a></li>
+	
+	<li><a href="/article/tag/770" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">アプリケーション解析</a></li>
+	
+</ul>
+<div class="morelist">
+<p><a href="/article/tag/" gaeaction="Parts-p_Gengo" sclabelbg="%TITLE%">言語一覧</a></p>
+</div>
+</div>
+<!-- /#contents==#main==#other_list -->
+
+
+<!-- ad -->
+
+<!-- /ad -->
+
+
+</div>
+<!-- /inner -->
+
+
+
+
+</div>
+<!-- /contents==main -->
+
+
+<!-- contents==sidebar -->
+<div id="sidebar">
+
+<div class="toolmenu" id="toolmenu">
+  <div class="login" pop_placement="left" cookie_name="ShopperManager2%2F"></div>
+</div>
+
+<style type="text/css">
+#srchLogo
+{
+text-align:right;
+}
+#srchLogo a
+{
+color:#666666;
+text-decoration:none;
+font-size:70%;
+}
+
+</style>
+
+
+
+<div id="searcharea">
+<form action="/search/" method="get" class="searchbox" >
+<div class="inner">
+<div class="searchbase">
+<p>
+<input type="text" name="p" class="searchword" id="srchInput" size="20" >
+<input type="submit" value="検索" class="searchsubmit">
+</p>
+<input type="hidden" id="fr" name="fr" value="cse">
+<input type="hidden" id="ei" name="ei" value="UTF-8">
+<input type="hidden" id="csid" name="csid" value="v1aD5BVSIZP4Nw35eVMorqyEoy43lS8NWvOFZ58TOQ--">
+<input type="hidden" name="vs" value="codezine.jp" id="yjInsite">
+<br/>
+</div>
+<p id="srchLogo"><a href="http://www.yahoo.co.jp" target="_blank">powered by Yahoo! JAPAN</a></p>
+<img src="http://custom.search.yahoo.co.jp/images/window/s2VSZsJSIZMAH_pXp5aPdccf7rumm5PPZ9n6BDCGNQ--.gif">
+
+</div>
+</form>
+</div>
+
+
+<!-- searcharea -->
+<!--
+<div id="searcharea">
+	<form action="/search" class="searchbox">
+	<div class="inner">
+		<div class="searchbase">
+		<p>
+	<input name="q" type="text" size="20" class="searchword" id="google_searchbox">
+	<input type="submit" value="検索" class="searchsubmit">
+	</p>
+	</div></div>
+	</form>
+</div>
+-->
+<!-- /searcharea -->
+
+
+
+
+
+<!-- ad -->
+<div class="sidebanner">
+
+<script type="text/javascript">
+<!--
+var impAserver = "http://as.se.impact-ad.jp";
+var impAtarget = "/SITE=CZ/AREA=RIGHT.RECT/AAMSZ=300X300/OENCJP=UTF8";
+impArnd = Math.round(Math.random() * 100000000);
+if (location.protocol == 'http:'){
+document.write('<scr');
+document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '">');
+document.write('<\/scr');
+document.write('ipt>');
+}
+//-->
+</script>
+<noscript>
+<iframe
+	src="http://as.se.impact-ad.jp/hserver/SITE=CZ/AREA=RIGHT.RECT/AAMSZ=300X300/OENCJP=UTF8" 
+	scrolling="no" frameborder="0" marginheight="0" marginwidth="0" style="width:300px; height:300px; background-color:transparent;">
+</iframe>
+</noscript>
+
+</div>
+<!-- /ad -->
+
+
+
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+  impAserver_sc  = "http://as.se.impact-ad.jp";
+  impAtarget1_sc = "/AAMB1/SITE=CZ/AREA=RIGHT.SC/AAMSZ=300X100/OENCJP=UTF8";
+  impAtarget2_sc = "/AAMB2/SITE=CZ/AREA=RIGHT.SC/AAMSZ=300X100/OENCJP=UTF8";
+  impAtarget_sc  = impAtarget1_sc + impAtarget2_sc;
+
+  impArnd = Math.round(Math.random() * 100000000);
+  document.write('<scr');
+  document.write('ipt src="' + impAserver + '/bservers/AAMALL/acc_random=' + impArnd + '/pageid=' + impApid + impAtarget_sc+'">');
+  document.write('<\/scr');
+  document.write('ipt>');
+//-->
+</script>
+<script type="text/javascript">
+<!--
+  var impAnads_sc = 2;
+  var impAbs_sc = new Array(impAnads_sc);
+  for ( i = 0 ; i < impAnads_sc ; i++) {
+    eval('impAbs_sc['+i+'] = (typeof(AAMB' + (i+1) + ') != "undefined")?AAMB' + (i+1) + ':"";');
+    impAbs_sc[i] = (impAbs_sc[i].indexOf('AESE') == -1)?impAbs_sc[i]:'';
+  }
+  var impAads_sc = impA_rotate(impAbs_sc);
+//-->
+</script>
+<script type="text/javascript">
+if ((typeof(impAads_sc[0]) !='undefined' && impAads_sc[0] !="") || (typeof(impAads_sc[1]) !='undefined' && impAads_sc[1] !="")){
+document.write('<!-- Special -->' + "\n");
+document.write('<div class="specialcontents">' + "\n");
+document.write('<img alt="スペシャルコンテンツ" src="/static/common/images/tit_specialcontents.png">' + "\n");
+document.write('<div class="inbox">' + "\n");
+  if (typeof(impAads_sc[0]) !='undefined' && impAads_sc[0] !=""){document.write(impAads_sc[0]);}
+  if (typeof(impAads_sc[1]) !='undefined' && impAads_sc[1] !=""){document.write(impAads_sc[1]);}
+document.write('</div>' + "\n");
+document.write('</div>' + "\n");
+document.write('<!-- /Special -->' + "\n");
+}
+</script>
+
+
+
+
+
+
+<!-- contents==sidebar==hottopics -->
+<div class="hottopics">
+<img src="/static/common/images/tit_newtopics.png" alt="ニュートピックス" width="300" height="25">
+<div class="inbox">
+<div class="item_title">最新ニュース<span class="compendium"><a href="/news/">一覧</a></span></div>
+<ul>
+<li><a href="/article/detail/8681" title="IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説"  gaeaction="Right-r_NewArticle" sclabelbg="8681:%TITLE%">IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8680" title="データサイエンス向けのPython統合開発環境「Rodeo」をリリース"  gaeaction="Right-r_NewArticle" sclabelbg="8680:%TITLE%">データサイエンス向けのPython統合開発環境「Rodeo」をリリース</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8679" title="JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース"  gaeaction="Right-r_NewArticle" sclabelbg="8679:%TITLE%">JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8678" title="GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称"  gaeaction="Right-r_NewArticle" sclabelbg="8678:%TITLE%">GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8676" title="Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開"  gaeaction="Right-r_NewArticle" sclabelbg="8676:%TITLE%">Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開</a></li>
+
+</ul>
+<div class="item_title">最新記事<span class="compendium"><a href="/article/">一覧</a></span></div>
+<ul class="last">
+<li><a href="/article/detail/8642" title="【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場" gaeaction="Right-r_NewNews" sclabelbg="8642:%TITLE%">【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8560" title="フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する" gaeaction="Right-r_NewNews" sclabelbg="8560:%TITLE%">フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8611" title="LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行" gaeaction="Right-r_NewNews" sclabelbg="8611:%TITLE%">LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8575" title="【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法" gaeaction="Right-r_NewNews" sclabelbg="8575:%TITLE%">【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法</a><img src="/static/common/images/new.gif" style="margin-left:2px; margin-top:1px;" alt="new"></li>
+<li><a href="/article/detail/8586" title="【デブサミ2015】20-E-3 レポート　クラウドガバナンス入門 ～失敗から学ぶ、組織でクラウドを活かすために大切なこと" gaeaction="Right-r_NewNews" sclabelbg="8586:%TITLE%">【デブサミ2015】20-E-3 レポート　クラウドガバナンス入門 ～失敗から学ぶ、組織でクラウドを活かすために大切なこと</a></li>
+
+</ul>
+</div>
+</div>
+<!-- /contents==sidebar==hottopics -->
+
+
+
+<!-- ad -->
+<div class="pickup">
+	<img src="/static/common/images/tit_pickuplink.png" alt="ピックアップリンク">
+	<div class="inbox">
+	<table class="bannercenter">
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393228911687-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393228911687-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229197983-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229197983-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229108826-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229108826-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229509372-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229509372-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393228961100-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393228961100-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229236273-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229236273-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229157020-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229157020-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229567441-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229567441-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229038023-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229038023-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229428709-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229428709-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393228984749-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393228984749-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229358759-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229358759-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229085168-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229085168-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229480634-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229480634-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229134807-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229134807-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229543720-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229543720-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229016288-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229016288-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229391220-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229391220-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+		<tr>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PI -->
+    <div id='div-gpt-ad-1393229061793-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229061793-0'); });
+    </script>
+    </div>
+		</td>
+		<td style="padding-bottom:0px; margin-bottom:1px">
+    <!-- CZ_PT -->
+    <div id='div-gpt-ad-1393229451841-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1393229451841-0'); });
+    </script>
+    </div>
+		</td>
+	</tr>
+	
+	</table>
+	</div>
+</div>
+<!-- ad -->
+
+
+
+
+<div class="ranking">
+<img src="/static/common/images/tit_ranking.png" alt="ランキング" width="300" height="25">
+<div class="inbox">
+<div class="ranking_num" id="ranking_num01">
+<a href="/article/detail/8642" title="【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場" gaeaction="Right-r_Ranking" sclabelbg="8642:%TITLE%">【制作1日目】 池澤あやかさん、イベント会場がヒートアップ間違いなしのアプリを制作、まずはクライアント側処理です ～ Amazon S3 / Cognito / Kinesis / DynamoDB 登場</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num02">
+<a href="/article/detail/8678" title="GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称" gaeaction="Right-r_Ranking" sclabelbg="8678:%TITLE%">GitHub、JavaScriptでデスクトップアプリが作れるライブラリAtom Shellを、Electronに改称</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num03">
+<a href="/article/detail/8560" title="フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する" gaeaction="Right-r_Ranking" sclabelbg="8560:%TITLE%">フリーのVM環境を使って、ビッグデータ分析の学習環境をすばやく構築する</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num04">
+<a href="/article/detail/8680" title="データサイエンス向けのPython統合開発環境「Rodeo」をリリース" gaeaction="Right-r_Ranking" sclabelbg="8680:%TITLE%">データサイエンス向けのPython統合開発環境「Rodeo」をリリース</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num05">
+<a href="/article/detail/8679" title="JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース" gaeaction="Right-r_Ranking" sclabelbg="8679:%TITLE%">JavaScript国際化ライブラリ「Globalize 1.0」初の安定版がリリース</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num06">
+<a href="/article/detail/8681" title="IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説" gaeaction="Right-r_Ranking" sclabelbg="8681:%TITLE%">IPA、「IT人材白書2015」を販売開始、IoT・M2M・データ活用ビジネスに求められる人材について解説</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num07">
+<a href="/article/detail/8676" title="Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開" gaeaction="Right-r_Ranking" sclabelbg="8676:%TITLE%">Google、Android Wearなどに対応した新しいAndroidのサンプルコードをGitHubで公開</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num08">
+<a href="/article/detail/8657" title="米Microsoft、機械学習サービス「Azure Machine Learning」に関する無料の電子書籍を公開" gaeaction="Right-r_Ranking" sclabelbg="8657:%TITLE%">米Microsoft、機械学習サービス「Azure Machine Learning」に関する無料の電子書籍を公開</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num09">
+<a href="/article/detail/8575" title="【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法" gaeaction="Right-r_Ranking" sclabelbg="8575:%TITLE%">【デブサミ2015】19-A-4 レポート　JavaエンジニアのScalaへの挑戦 ～高速開発を実現した開発プロセスと、Scala最大の難関「モナド」の攻略法</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+<div class="ranking_num" id="ranking_num10">
+<a href="/article/detail/8611" title="LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行" gaeaction="Right-r_Ranking" sclabelbg="8611:%TITLE%">LPICは「Linux教科書」におまかせ！　レベル2 Version4.0に対応した「スピードマスター問題集」刊行</a><img src="/static/common/images/new.gif" width="28" height="12" class="new" alt="new"></div>
+
+</div>
+</div>
+
+<!-- contents==sidebar==adobe -->
+<!--div class="hottopics">
+<img src="/static/common/images/tit_newtopics.png" alt="ニュートピックス" width="300" height="25">
+<div class="inbox"-->
+<div class="activeparts">
+<div class="apptitle">Adobe Developer Connection 新着記事</div>
+<div class="inbox2">
+<ul style="margin:5px">
+<li><a href="http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer06.html?sdid=IZXVD" title="Edge Animateプチリファレンス：モーションパスを使ったアニメーション" gaeaction="Right-right_adobe" sclabelbg="right_adobe:%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer06.html" gaelabel="%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer06.html" target="_blank">Edge Animateプチリファレンス：モーションパスを使ったアニメーション</a></li>
+<li><a href="http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer09.html?sdid=IZXVD" title="Edge Animateプチリファレンス：Webフォントの利用" gaeaction="Right-right_adobe" sclabelbg="right_adobe:%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer09.html" gaelabel="%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer09.html" target="_blank">Edge Animateプチリファレンス：Webフォントの利用</a></li>
+<li><a href="http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer07.html?sdid=IZXVD" title="Edge Animateプチリファレンス：プリローダーの作成" gaeaction="Right-right_adobe" sclabelbg="right_adobe:%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer07.html" gaelabel="%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer07.html" target="_blank">Edge Animateプチリファレンス：プリローダーの作成</a></li>
+<li><a href="http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer04.html?sdid=IZXVD" title="Edge Animateプチリファレンス：作成したコンテンツを既存のHTML内に表示する" gaeaction="Right-right_adobe" sclabelbg="right_adobe:%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer04.html" gaelabel="%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer04.html" target="_blank">Edge Animateプチリファレンス：作成したコンテンツを既存のHTML内に表示する</a></li>
+<li><a href="http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer05.html?sdid=IZXVD" title="Edge Animateプチリファレンス：シンボルを利用する" gaeaction="Right-right_adobe" sclabelbg="right_adobe:%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer05.html" gaelabel="%TITLE%:http://www.adobe.com/jp/devnet/edge/articles/edge_animate_refer05.html" target="_blank">Edge Animateプチリファレンス：シンボルを利用する</a></li>
+
+</ul>
+<div align="right">
+<a href="http://www.adobe.com/jp/devnet/article-index.html?sdid=IZXVD" target="_blank" gaeaction="Right-right_adobe" sclabelbg="right_adobe:list_link" gaelabel="list_link" scvars="14" scevents="5"><small><b>≫ADC最新記事一覧</b></small></a>
+</div>
+</div>
+</div>
+<!-- /contents==sidebar==adobe -->
+
+
+
+<div class="activeparts">
+<a href="/unixdic/"><div class="apptitle">UNIXコマンド辞典ショートカット</div></a>
+<div class="inbox">
+  <div id="hs_side1">
+  <div class="hs_2col">
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AE%E6%93%8D%E4%BD%9C" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">ファイル操作</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">システム管理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E7%AE%A1%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">ネットワーク管理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E5%8D%B0%E5%88%B7%E5%87%A6%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">印刷処理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="http://codezine.jp/unixdic/i/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">インストール</a>
+      </div>
+    </div>
+    <div class="hs_2col">
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E5%87%A6%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">テキスト処理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%82%B8%E3%83%A7%E3%83%96%E7%AE%A1%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">ジョブ管理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E5%87%A6%E7%90%86" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">デバイス処理</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/%E5%9C%A7%E7%B8%AE%E3%83%BB%E8%A7%A3%E5%87%8D%E3%83%BB%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">圧縮・解凍</a>
+      </div>
+      <div class="keyword_2col">
+        <a href="/unixdic/i/UNIX%E5%9F%BA%E7%A4%8E%E8%AC%9B%E5%BA%A7" gaeaction="Right-r_UnixDic" sclabelbg="%TITLE%">UNIX基本講座</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<a href="http://twitter.com/codezine" class="twitter-follow-button" data-lang="ja">Follow @codezine</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+<div class="activeparts">
+<div class="apptitle">Facebookもチェック</div>
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FCodeZine%2F152219658174983&amp;width=293&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;height=258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:293px; height:258px;" allowTransparency="true"></iframe>
+</div>
+
+
+<!-- /contents==sidebar -->
+
+</div>
+<!-- /contents -->
+
+
+<div class="clear"><hr></div>
+
+
+
+<div id="footer">
+<div id="footer_gotop">
+<div class="gotop"><a href="#PAGETOP"><img src="/static/common/images/pagetop.gif" alt="ページトップへ" width="80" height="24"></a></div>
+</div>
+<div id="footer_in">
+<table>
+<tr>
+
+
+<td id="footercopy">
+<dl>
+<dt>CodeZineについて</dt>
+<dd>プログラミングに役立つソースコードと解説記事が満載な開発者のための実装系Webマガジンです。</dd>
+</dl>
+<p>All contents copyright &copy; 2005-2015 Shoeisha Co., Ltd. All rights reserved. ver.1.5<br>
+掲載記事、写真、イラストの無断転載を禁じます。 <br>
+記載されているロゴ、システム名、製品名は各社及び商標権者の登録商標あるいは商標です。 </p>
+</td>
+
+
+<td id="footermenu_l" valign="top">
+<ul>
+<li><a href="/help/" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">ヘルプ・お問い合わせ</a></li>
+<li><a href="http://www.shoeisha.co.jp/ad/web/index.html" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">広告掲載のご案内</a></li>
+<li><a href="https://sems.shoeisha.com/help/aboutlink/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">著作権・リンク</a></li>
+<li><a href="http://sems.shoeisha.com/help/im/" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">免責事項</a></li>
+<li><a href="http://www.shoeisha.co.jp/" target="se" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">会社概要</a></li>
+<li><a href="http://www.seplus.jp/sework/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">スタッフ募集！</a></li>
+<li><a href="http://sems.shoeisha.com/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">メンバー情報管理</a></li>
+<li><a href="/ml/backnumber/" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">メールバックナンバー</a></li>
+</ul>
+</td>
+
+
+<td id="footermenu_r" valign="top">
+<ul>
+<li><a href="http://enterprisezine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">エンタープライズ</a></li>
+<li><a href="http://markezine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">マーケティング</a></li>
+<li><a href="http://moneyzine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">マネー・投資</a></li>
+<li><a href="http://careerzine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">キャリアアップ</a></li>
+<li><a href="http://eczine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">ネット通販</a></li>
+<li><a href="http://bizzine.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">イノベーション</a></li>
+<li><a href="http://selectbox.shoeisha.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">ホワイトペーパー</a></li>
+<li><a href="http://enterprisezine.jp/special/pminfo" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">プロジェクトマネジメント</a></li>
+<li><a href="http://www.seshop.com/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">書籍・ソフトを買う</a></li>
+<li><a href="http://www.denken3.com/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">電験3種対策講座</a></li>
+<li><a href="http://www.denken3.net/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">電験3種ネット</a></li>
+<li><a href="http://denkou.info/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%">第二種電気工事士</a></li>
+
+</ul>
+</td>
+
+
+<td id="footerlogo">
+<ul class="rss">
+<li><a href="/help/rss/" gaeaction="Footer-f_FooterLink" sclabelbg="%TITLE%"><img src="/static/common/images/rss.gif" alt="RSS" width="30" height="14">各種RSSを配信中</a></li>
+</ul>
+<a href="http://privacymark.jp/" gaeaction="Footer-f_FooterLink" sclabelbg="Pマーク"><img src="http://static.shoeisha.jp/common/images/pmark.gif" alt="プライバシーマーク"></a>
+<a href="http://www.shoeisha.co.jp/" target="_blank" gaeaction="Footer-f_FooterLink" sclabelbg="翔泳社ロゴ"><img src="/static/common/images/shoeisha-logo.gif" alt="翔泳社" width="72" height="54"></a>
+<script type="text/javascript">
+<!--
+if(location.protocol == 'https:'){
+	//document.write('<scr' + 'ipt language="JavaScript" TYPE="text/javascript" src="https://trusted-web-seal.cybertrust.ne.jp/seal/getScript?host_name=codezine.jp&amp;type=2"><\/scr' + 'ipt>');
+	document.write('<span id="siteseal"><a href="https://seal.starfieldtech.com/verifySeal?sealID=ytnyLB8aHqeK2GX7wmPJrMdh1RaYWllOanJhB09E5XcR4M7c0nK1sNcbg" onclick="window.open(\'https://seal.starfieldtech.com/verifySeal?sealID=ytnyLB8aHqeK2GX7wmPJrMdh1RaYWllOanJhB09E5XcR4M7c0nK1sNcbg\',\'\', \'width=500,height=400\'); return false;" target="_blank">  <img src="https://www.shoeisha.co.jp/static/siteseal_sf_2_b_m_iv.gif" /></a></span>	');
+	
+}
+-->
+</script>
+</td>
+
+
+
+
+</tr>
+</table>
+</div>
+</div>
+
+<!-- /footer -->
+
+<script type="text/javascript">
+<!--
+if (document.getElementById('toolmenu')){
+	var id = '';
+	id += '&rand=' + Math.random();
+	//$("#toolmenu").load("/headermenu/",{method: 'post', parameters: id, asynchronous: 1 });
+}
+-->
+</script>
+<script type="text/javascript" src="http://img.ak.impact-ad.jp/bta/b/IT.CODEZINE.js"></script>
+
+
+</div>
+
+</body>
+</html>
+
